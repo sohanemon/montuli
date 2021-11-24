@@ -4,7 +4,9 @@ let Navigation = () => {
   return (
     <div>
       <Navbar dark color="dark">
-        <NavbarBrand href="/">Montuli</NavbarBrand>
+        <div className="container">
+          <NavbarBrand href="/">Montuli</NavbarBrand>
+        </div>
       </Navbar>
     </div>
   );

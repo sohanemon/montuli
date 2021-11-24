@@ -11,3 +11,4 @@ let MainComponent = () => {
     </div>
   );
 };
+export default MainComponent;
