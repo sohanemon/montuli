@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardTitle, CardBody, CardImg, CardImgOverlay } from "reactstrap";
 let MenuItem = (props) => {
-  console.log(props);
   return (
     <div>
       <Card style={{ margin: "10px" }}>
@@ -15,7 +14,7 @@ let MenuItem = (props) => {
           />
         </CardBody>
         <CardImgOverlay>
-          <CardTitle>
+          <CardTitle onClick={props.DishSelect} style={{ cursor: "pointer" }}>
             <h3
               style={{
                 marginTop: "35%",
