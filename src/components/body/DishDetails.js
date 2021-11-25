@@ -1,4 +1,5 @@
 import React from "react";
+import Comment from "./Comment";
 import {
   Card,
   CardTitle,
@@ -21,6 +22,10 @@ const DishDetails = (props) => {
             <p>{props.dish.description}</p>
             <h5>Price: {props.dish.price} tk</h5>
           </CardText>
+          <hr />
+          <div>
+            <Comment com={props.dish.comments} />
+          </div>
         </CardBody>
       </Card>
     </div>
