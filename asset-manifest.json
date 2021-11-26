@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/montuli/static/css/main.106baaae.chunk.css",
+    "main.js": "/montuli/static/js/main.140d9c1a.chunk.js",
+    "main.js.map": "/montuli/static/js/main.140d9c1a.chunk.js.map",
+    "runtime-main.js": "/montuli/static/js/runtime-main.bd6847ac.js",
+    "runtime-main.js.map": "/montuli/static/js/runtime-main.bd6847ac.js.map",
+    "static/css/2.383c0125.chunk.css": "/montuli/static/css/2.383c0125.chunk.css",
+    "static/js/2.2581eda3.chunk.js": "/montuli/static/js/2.2581eda3.chunk.js",
+    "static/js/2.2581eda3.chunk.js.map": "/montuli/static/js/2.2581eda3.chunk.js.map",
+    "index.html": "/montuli/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/montuli/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.106baaae.chunk.css.map": "/montuli/static/css/main.106baaae.chunk.css.map",
+    "static/js/2.2581eda3.chunk.js.LICENSE.txt": "/montuli/static/js/2.2581eda3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/montuli/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd6847ac.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.2581eda3.chunk.js",
+    "static/css/main.106baaae.chunk.css",
+    "static/js/main.140d9c1a.chunk.js"
+  ]
+}
