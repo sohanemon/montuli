@@ -13,6 +13,7 @@ let Comment = (props) => {
           Rating:{" "}
           <span
             style={{
+              // textAlign: "left",
               fontWeight: "700",
               fontSize: "25px",
               marginTop: "39px",

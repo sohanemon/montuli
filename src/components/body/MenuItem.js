@@ -6,17 +6,16 @@ let MenuItem = (props) => {
       <Card style={{ margin: "10px" }}>
         <CardBody>
           <CardImg
-            width="100px"
-            height="400px"
             alt={props.dish.name}
             src={props.dish.image}
-            style={{ opacity: ".5" }}
+            style={{ opacity: ".75" }}
           />
         </CardBody>
         <CardImgOverlay>
           <CardTitle onClick={props.DishSelect} style={{ cursor: "pointer" }}>
             <h3
               style={{
+                textAlign: "center",
                 marginTop: "35%",
                 fontWeight: "Bold",
                 color: "black",
