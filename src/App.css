@@ -1,11 +1,19 @@
 .card-img,
 .card-img-bottom,
 .card-img-top {
-  width: 380px !important;
-  height: 310px !important;
+  width: 320px !important;
+  height: 240px !important;
 }
 .card-group {
   display: flex;
   flex-flow: row wrap;
   justify-content: center !important;
+}
+.navbar-brand > span:nth-child(2) {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0px;
+  letter-spacing: 0.6em;
 }

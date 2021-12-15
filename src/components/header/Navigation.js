@@ -8,6 +8,7 @@ import {
   Collapse,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 class Navigation extends Component {
   state = {
     navOpen: false,
@@ -22,7 +23,14 @@ class Navigation extends Component {
         <Navbar dark color="dark" expand="sm">
           <div className="container" style={{ textAlign: "center" }}>
             <NavbarToggler onClick={this.toogleNavbar} />
-            <NavbarBrand href="/">Montuli Cafe</NavbarBrand>
+            <NavbarBrand href="/">
+              <img
+                src={logo}
+                alt="Logo"
+                style={{ width: "50px", height: "50px" }}
+              />{" "}
+              <span> Montuli Cafe </span>
+            </NavbarBrand>
             <Collapse isOpen={this.state.navOpen} navbar>
               <Nav className="mr-auto" navbar>
                 <NavItem>
