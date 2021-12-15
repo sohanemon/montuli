@@ -1,11 +1,12 @@
-import React from "react";
-import { Component } from "react/cjs/react.development";
+// import React from "react";
 import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
+import React, { Component } from "react";
+
 class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: "",
+      fname: '""',
       lname: "",
       tel: "",
       mail: "",
@@ -13,11 +14,13 @@ class Contact extends Component {
       contactType: "tel.",
       messege: "",
     };
+    // this.handleInputChange = this.handleInputChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleInputChange = (e) => {
     let value =
-      e.target.type === "checkbox" ? e.target.checked : e.target.value;
-    let name = e.target.type;
+      e.target.name === "checkbox" ? e.target.checked : e.target.value;
+    let name = e.target.name;
     this.setState({ [name]: value });
   };
 
@@ -34,7 +37,7 @@ class Contact extends Component {
             Send Your Feedback
           </div>
           <div className="col-12">
-            <Form>
+            <Form onSubmit={this.handleSubmit}>
               <FormGroup row>
                 <Label htmlFor="fname" md={2}>
                   First Name
@@ -45,6 +48,7 @@ class Contact extends Component {
                     placeholder="First Name"
                     name="fname"
                     value={this.state.fname}
+                    onChange={(e) => this.handleInputChange(e)}
                   />
                 </Col>
               </FormGroup>
@@ -54,11 +58,11 @@ class Contact extends Component {
                 </Label>
                 <Col md={10}>
                   <Input
-                    onChange={(e) => this.handleInputChange(e)}
                     type="text"
                     placeholder="Last Name"
                     name="lname"
                     value={this.state.lname}
+                    onChange={(e) => this.handleInputChange(e)}
                   />
                 </Col>
               </FormGroup>{" "}
@@ -129,11 +133,7 @@ class Contact extends Component {
               </FormGroup>
               <FormGroup row>
                 <Col md={{ size: 10, offset: 2 }}>
-                  <Button
-                    type="submit"
-                    color="secondary"
-                    onSubmit={(e) => this.handleSubmit(e)}
-                  >
+                  <Button type="submit" color="secondary">
                     {" "}
                     Send{" "}
                   </Button>
