@@ -6,7 +6,7 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: '""',
+      fname: "",
       lname: "",
       tel: "",
       mail: "",
@@ -30,6 +30,7 @@ class Contact extends Component {
   };
 
   render() {
+    document.title = "Contacts | Montuli Cafe";
     return (
       <div className="container">
         <div className="row row-content">
@@ -73,7 +74,7 @@ class Contact extends Component {
                 <Col md={10}>
                   <Input
                     onChange={(e) => this.handleInputChange(e)}
-                    type="text"
+                    type="number"
                     placeholder="telephone"
                     name="tel"
                     value={this.state.tel}
@@ -87,7 +88,7 @@ class Contact extends Component {
                 <Col md={10}>
                   <Input
                     onChange={(e) => this.handleInputChange(e)}
-                    type="text"
+                    type="email"
                     placeholder="mail"
                     name="mail"
                     value={this.state.mail}

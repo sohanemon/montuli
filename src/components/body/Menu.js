@@ -10,10 +10,13 @@ import {
   ModalFooter,
   Button,
 } from "reactstrap";
+import { connect } from "react-redux";
+const mapStateToProps = (state) => {
+  return { dishes: state.dishes };
+};
 
 class Menu extends Component {
   state = {
-    dishes: Dishes,
     selectedDish: null,
     modalState: false,
   };
@@ -25,7 +28,8 @@ class Menu extends Component {
     this.setState({ selectedDish: dish, modalState: !this.state.modalState });
   };
   render() {
-    const menu = this.state.dishes.map((item) => {
+    document.title = "Menu | Montuli Cafe";
+    const menu = this.props.dishes.map((item) => {
       return (
         <MenuItem
           dish={item}
@@ -51,4 +55,4 @@ class Menu extends Component {
     );
   }
 }
-export default Menu;
+export default connect(mapStateToProps)(Menu);
