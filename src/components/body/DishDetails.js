@@ -27,7 +27,7 @@ const DishDetails = (props) => {
           <div>
             <Comment com={props.dish.comments} />
             <br />
-            <CommentForm />
+            <CommentForm id={props.dish.id} />
           </div>
         </CardBody>
       </Card>
