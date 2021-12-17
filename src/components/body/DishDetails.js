@@ -8,6 +8,7 @@ import {
   CardImgOverlay,
   CardText,
 } from "reactstrap";
+import CommentForm from "./CommentForm";
 const DishDetails = (props) => {
   return (
     <div>
@@ -25,6 +26,8 @@ const DishDetails = (props) => {
           <hr />
           <div>
             <Comment com={props.dish.comments} />
+            <br />
+            <CommentForm />
           </div>
         </CardBody>
       </Card>
